@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+	android:animateLayoutChanges="true"
+	android:orientation="vertical"
+	android:scrollbars="vertical">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:paddingTop="56dp"
+		android:paddingLeft="24dp"
+		android:paddingRight="24dp">
+		<ImageView android:src="@drawable/logo"
+				android:layout_width="wrap_content"
+				android:layout_height="72dp"
+				android:layout_marginBottom="24dp"
+				android:layout_gravity="center_horizontal" />
+
+		<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:tools="http://schemas.android.com/tools"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:columnCount="6"
+			android:rowCount="1"
+			android:orientation="horizontal">
+			<TextView android:layout_width="wrap_content"
+				android:id="@+id/txt_mainhead"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"
+				android:text="Selected Item:"
+				android:textStyle="bold"
+				android:textSize="14sp" />
+			<ImageView android:id="@+id/img_lvl_1"
+				android:src="@drawable/ic_crop"
+				android:layout_width="wrap_content"
+				android:layout_marginTop="2dp"
+				android:layout_marginBottom="5dp"
+				android:layout_height="24dp" />
+			<TextView android:id="@+id/txt_lvl_1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"
+				android:text="Crop"
+				android:textSize="12sp" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"
+				android:layout_marginLeft="10dp"
+				android:text=">>"
+				android:textStyle="bold"
+				android:textSize="12sp" />
+			<ImageView android:id="@+id/img_lvl_2"
+				android:src="@drawable/ic_corn"
+				android:layout_width="wrap_content"
+				android:layout_marginTop="2dp"
+				android:layout_marginBottom="5dp"
+				android:layout_height="24dp" />
+			<TextView android:id="@+id/txt_lvl_2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"
+				android:text="Corn"
+				android:textSize="12sp" />
+		</GridLayout>
+
+		
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="1dp"
+			android:text="Select plot"
+			android:textSize="16sp" />
+		<android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="3dp">
+			<Spinner android:id="@+id/spinner_SelectPlot"  
+			    android:layout_width="fill_parent"  
+			    android:layout_height="wrap_content"  
+			    android:prompt="@string/value_SelectPlot" />			
+        </android.support.design.widget.TextInputLayout>	
+
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="5dp">
+			<EditText android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColorHint="@color/colorWhite"
+				android:hint="Activity Date"
+				android:clickable="true"
+				android:editable="false"
+				android:focusable="false"
+				android:id="@+id/activityDate_EditText" />
+		</android.support.design.widget.TextInputLayout>
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="1dp"
+			android:text="What activity did you complete?"
+			android:textSize="16sp" />
+		<android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="3dp">
+			<Spinner android:id="@+id/spinner_activityComplete"  
+			    android:layout_width="fill_parent"  
+			    android:layout_height="wrap_content"  
+			    android:prompt="@string/value_activityComplete" />			
+        </android.support.design.widget.TextInputLayout>
+		
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp">
+			<EditText android:id="@+id/input_livestockCount"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="number"
+				android:textColorHint="@color/colorWhite"
+				android:hint="How many do you have?" />
+		</android.support.design.widget.TextInputLayout>
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="1dp"
+			android:text="What to you use your livestock for ?"
+			android:textSize="16sp" />
+		<android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="5dp">
+			<Spinner android:id="@+id/spinner_livestockFor"  
+			    android:layout_width="fill_parent"  
+			    android:layout_height="wrap_content"  
+			    android:prompt="@string/value_livestockFor" />			
+        </android.support.design.widget.TextInputLayout>
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp">
+			<EditText android:id="@+id/input_livestockForOther"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="text"
+				android:textColorHint="@color/colorWhite"
+				android:hint="Other" />
+		</android.support.design.widget.TextInputLayout>
+
+		<TextView
+			android:text="Do you sell your livestock ?"
+			android:layout_marginTop="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:layout_column="1" />
+		<Switch android:text="No"  
+			android:layout_width="match_parent"  
+			android:layout_height="wrap_content"  
+			android:checked="false"  
+			android:textOn="YES"  
+			android:textOff="NO"  
+			android:id="@+id/switchLivestockSell" />
+
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp">
+			<EditText android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColorHint="@color/colorWhite"
+				android:hint="When did you last sell your Livestock"
+				android:clickable="true"
+				android:editable="false"
+				android:focusable="false"
+				android:id="@+id/dateLastLivestockSell_EditText" />
+		</android.support.design.widget.TextInputLayout>
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="1dp"
+			android:text="What did you sell?"
+			android:textSize="16sp" 
+			android:id="@+id/txt_livestockSellType"/>
+		<android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="5dp">
+			<Spinner android:id="@+id/spinner_livestockSellType"  
+			    android:layout_width="fill_parent"  
+			    android:layout_height="wrap_content"  
+			    android:prompt="@string/value_livestockSellType" />			
+        </android.support.design.widget.TextInputLayout>
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="4dp">
+			<EditText android:id="@+id/input_livestockSellTypeOther"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="text"
+				android:textColorHint="@color/colorWhite"
+				android:hint="Other" />
+		</android.support.design.widget.TextInputLayout>
+
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="4dp"
+			android:layout_marginBottom="4dp">
+			<EditText android:id="@+id/input_livestockSellNo"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="number"
+				android:textColorHint="@color/colorWhite"
+				android:hint="How many do you sell it for?" />
+		</android.support.design.widget.TextInputLayout>
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="1dp"
+			android:text="To who ?"
+			android:textSize="16sp" 
+		    android:id="@+id/txt_livestockSellWho"/>
+		<android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="5dp">
+			<Spinner android:id="@+id/spinner_livestockSellWho"  
+			    android:layout_width="fill_parent"  
+			    android:layout_height="wrap_content"  
+			    android:prompt="@string/value_livestockSellWho" />			
+        </android.support.design.widget.TextInputLayout>	
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp">
+			<EditText android:id="@+id/input_livestockSellWhoOther"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="text"
+				android:textColorHint="@color/colorWhite"
+				android:hint="Other" />
+		</android.support.design.widget.TextInputLayout>
+
+		<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:tools="http://schemas.android.com/tools"
+			android:id="@+id/GridLayoutx3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:columnCount="2"
+			android:rowCount="1"
+			android:layout_gravity="right"
+			android:orientation="horizontal">
+			<android.support.v7.widget.AppCompatButton
+				android:id="@+id/btn_cancel"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="24dp"
+				android:layout_marginBottom="24dp"
+				android:padding="12dp"
+				android:minWidth="150dp"
+				android:textAlignment="center"
+				android:background="@drawable/gradient2"
+				android:text="Cancel"/>
+			<android.support.v7.widget.AppCompatButton
+				android:id="@+id/btn_save"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="24dp"
+				android:layout_marginLeft="15dp"
+				android:layout_marginBottom="24dp"
+				android:padding="12dp"
+				android:minWidth="150dp"
+				android:textAlignment="center"
+				android:background="@drawable/gradient"
+				android:text="Save"/>	
+		</GridLayout>
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataAccessCommands>
+  <Object Key="Account">
+    <DbCommand Method="CREATE" Caption="CreateAccount" CommandText="usp_Authentication" CommandType="StoredProcedure">
+      <Parameter Name="FirstName" Value="%0" />
+      <Parameter Name="LastName" Value="%1" />
+      <Parameter Name="Password" Value="%2" />
+      <Parameter Name="Address" Value="%3" />
+      <Parameter Name="EmailId" Value="%4" />
+      <Parameter Name="FarmId" Value="%5" DbType="Int32" Size="4" />
+      <Parameter Name="UserDeviceId" Value="%6" />
+      <Parameter Name="Opmode" Value="%7" DbType="Int32" Size="4"  />
+      <Parameter Name="AuthenticationSuccessmode" Value="%8" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>  
+    <DbCommand Method="READ" Caption="GetAccountDetails" CommandText="usp_Authentication" CommandType="StoredProcedure">
+      <Parameter Name="EmailId" Value="%0" />
+      <Parameter Name="Password" Value="%1" />
+      <Parameter Name="UserDeviceId" Value="%2" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%3" Direction="Output" Size="4" DbType="Int32" />
+      <Parameter Name="Opmode" Value="1" DbType="Int32" />
+    </DbCommand>
+    <DbCommand Method="READ" Caption="GetAccountUserDetails" CommandText="usp_Authentication" CommandType="StoredProcedure">
+      <Parameter Name="EmailId" Value="%0" />
+      <Parameter Name="UserId" Value="%1" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%2" Direction="Output" Size="4" DbType="Int32" />
+      <Parameter Name="Opmode" Value="7" DbType="Int32" />
+    </DbCommand>
+    <DbCommand Method="READ" Caption="GetAcountByUserClientData" CommandText="usp_Authentication" CommandType="StoredProcedure">
+      <Parameter Name="EmailId" Value="%0" />
+      <Parameter Name="UserId" Value="%1" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%3" Direction="Output" Size="4" DbType="Int32" />
+      <Parameter Name="Opmode" Value="8" DbType="Int32" />
+    </DbCommand>
+    <DbCommand Method="READ" Caption="GetAcountUserIdByEmail" CommandText="usp_Authentication" CommandType="StoredProcedure">
+      <Parameter Name="EmailId" Value="%0" />
+      <Parameter Name="UserDeviceId" Value="%1" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%2" Direction="Output" Size="4" DbType="Int32" />
+      <Parameter Name="Opmode" Value="9" DbType="Int32" />
+    </DbCommand>
+  </Object>
+  <Object Key="FarmDetail">
+    <DbCommand Method="CREATE" Caption="CreateFarmDetail" CommandText="usp_FarmPlotsOfAUser" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="24" />
+      <Parameter Name="FarmName" Value="%0" />
+      <Parameter Name="CoOpId" Value="%1" />
+      <Parameter Name="FarmSize" Value="%2" />
+      <Parameter Name="FarmSizeUnit" Value="%3" />
+      <Parameter Name="FarmEstablishedDate" Value="%4" />
+      <Parameter Name="FarmAdress" Value="%5" />
+      <Parameter Name="FarmId" Value="%6" />
+      <Parameter Name="IsActive" Value="%7" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%8" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+    <DbCommand Method="UPDATE" Caption="UpdateFarmDetail" CommandText="usp_FarmPlotsOfAUser" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="3" />
+      <Parameter Name="FarmName" Value="%0" />
+      <Parameter Name="CoOpId" Value="%1" />
+      <Parameter Name="FarmSize" Value="%2" />
+      <Parameter Name="FarmSizeUnit" Value="%3" />
+      <Parameter Name="FarmEstablishedDate" Value="%4" />
+      <Parameter Name="FarmAdress" Value="%5" />
+      <Parameter Name="FarmId" Value="%6" />
+      <Parameter Name="IsActive" Value="%7" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%8" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+    <DbCommand Method="UPDATE" Caption="ActivateFarm" CommandText="usp_FarmPlotsOfAUser" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="25" />
+      <Parameter Name="FarmId" Value="%0" />
+      <Parameter Name="IsActive" Value="%1" />
+    </DbCommand>
+    <DbCommand Method="READ" Caption="GetFarmDetails" CommandText="usp_FarmPlotsOfAUser" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="5" />
+      <Parameter Name="UserId" Value="%0" />
+       <Parameter Name="AuthenticationSuccessmode" Value="%1" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+    <DbCommand Method="READ" Caption="GetInactiveFarmDetails" CommandText="usp_FarmPlotsOfAUser" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="26" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%1" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+    <DbCommand Method="UPDATE" Caption="MapFarmByUserDetail" CommandText="usp_FarmPlotsOfAUser" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="21" />
+      <Parameter Name="FarmId" Value="%0" />
+      <Parameter Name="UserId" Value="%1" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%2" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+  </Object>
+  <Object Key="PlotDetail">
+    <DbCommand Method="CREATE" Caption="CreatePlot" CommandText="usp_FarmPlotsOfAUser" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="13" />
+      <Parameter Name="FarmId" Value="%0" />
+      <Parameter Name="PlotName" Value="%1" />
+      <Parameter Name="PlotSize" Value="%2" />
+      <Parameter Name="Organic" Value="%3" />
+      <Parameter Name="SoilPh" Value="%4" />
+      <Parameter Name="SoilId" Value="%5" />
+      <Parameter Name="Notes" Value="%6" />
+      <Parameter Name="UserId" Value="%7" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%8" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+    <DbCommand Method="UPDATE" Caption="UpdatePlot" CommandText="usp_FarmPlotsOfAUser" CommandType="StoredProcedure">
+      <Parameter Name="PlotName" Value="%0" />
+      <Parameter Name="PlotSize" Value="%1" />
+      <Parameter Name="Organic" Value="%2" />
+      <Parameter Name="SoilPh" Value="%3" />
+      <Parameter Name="SoilId" Value="%4" />
+      <Parameter Name="Notes" Value="%5" />
+      <Parameter Name="FarmId" Value="%6" />
+      <Parameter Name="PlotId" Value="%7" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%8" Direction="Output" Size="4" DbType="Int32" />
+      <Parameter Name="Opmode" Value="19" />
+
+    </DbCommand>
+    <DbCommand Method="READ" Caption="GetPlotDetailsById" CommandText="usp_FarmPlotsOfAUser" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="16" />
+      <Parameter Name="PlotId" DbType="Int32" Value="%0" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%1" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+    <DbCommand Method="READ" Caption="GetPlotListDetails" CommandText="usp_FarmPlotsOfAUser" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="17" />
+      <Parameter Name="FarmId" DbType="Int32" Value="%0" />
+      <Parameter Name="UserId" DbType="Int32" Value="%1" />
+       <Parameter Name="AuthenticationSuccessmode" Value="%1" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+  </Object>
+  <Object Key="SoilDetail">
+    <DbCommand Method="READ" Caption="GetSoilListDetails" CommandText="usp_FarmPlotsOfAUser" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="22" />
+       <Parameter Name="AuthenticationSuccessmode" Value="%1" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+  </Object>
+<Object Key="SoilPhDetail">
+   <DbCommand Method="READ" Caption="GetSoilPhListDetails" CommandText="usp_FarmPlotsOfAUser" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="23" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%1" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+</Object>
+  <Object Key="ActivityDetail">
+    <DbCommand Method="CREATE" Caption="CreateActivityCrop" CommandText="CROP_RESOURCE_LIVESTOCK_ActivityDetails" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="1" />
+      <Parameter Name="UserId" DbType="Int32" Value="%0" />
+      <Parameter Name="ProductId" DbType="Int32" Value="%1" />
+      <Parameter Name="categoryId" DbType="Int32" Value="%2" />
+      <Parameter Name="LastHarvestedDate" Value="%3" />
+      <Parameter Name="IsHarvestedBefore" Value="%4" />
+      <Parameter Name="IsSoldBefore" Value="%5" />
+      <Parameter Name="IsSoldBeforeNoReason"  Value="%6" />
+      <Parameter Name="SoldPrice"  Value="%7" />
+      <Parameter Name="ActivityDate" Value="%8" />
+      <Parameter Name="plantationdate" Value="%9" />
+      <Parameter Name="PlotId" DbType="Int32" Value="%10" />
+      <Parameter Name="ActivityDescriptionId" DbType="Int32" Value="%11" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%12" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+    <DbCommand Method="CREATE" Caption="CreateActivityLiveStock" CommandText="CROP_RESOURCE_LIVESTOCK_ActivityDetails" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="7" />
+      <Parameter Name="UserId" DbType="Int32" Value="%0" />
+      <Parameter Name="ProductId" DbType="Int32" Value="%1" />
+      <Parameter Name="categoryId" DbType="Int32" Value="%2" />
+      <Parameter Name="NumberOfLivestock"  Value="%3" />
+      <Parameter Name="LiveStockUsageId"  Value="%4" />
+      <Parameter Name="LIveStockUtilityId"  Value="%5" />
+      <Parameter Name="IsLivestockSalable"  Value="%6" />
+      <Parameter Name="LastDateOfLivestockSold" Value="%7" />
+      <Parameter Name="LivestocksellingLocationId"  Value="%8" />
+      <Parameter Name="ActivityDate" Value="%9" />
+      <Parameter Name="PlotId" Value="%10" />
+      <Parameter Name="ActivityDescriptionId" Value="%11" />
+      <Parameter Name="LivestocksellingLocationName" Value="%12" />
+      <Parameter Name="LiveStockName" Value="%13" />
+      <Parameter Name="LivestockUsageName" Value="%14" />
+      <Parameter Name="LivestockUtilityName" Value="%15" />
+      <Parameter Name="SoldLiveStockAmount" Value="%16" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%17" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+    <DbCommand Method="CREATE" Caption="CreateActivityResources" CommandText="CROP_RESOURCE_LIVESTOCK_ActivityDetails" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="12" />
+      <Parameter Name="UserId" DbType="Int32" Value="%0" />
+      <Parameter Name="ProductId" DbType="Int32" Value="%1" />
+      <Parameter Name="categoryId" DbType="Int32" Value="%2" />
+      <Parameter Name="NumberOfResource" DbType="Int32" Value="%3" />
+      <Parameter Name="ResourceCostTypeId" DbType="Int32" Value="%4" />
+      <Parameter Name="ResourceTypeId" DbType="Int32" Value="%5" />
+      <Parameter Name="ResourceTypeName" Value="%6" />
+      <Parameter Name="ResourceMaintenancePrice" Value="%7" />
+      <Parameter Name="ResourcePrice"  Value="%8" />
+      <Parameter Name="ActivityDate" DbType="DateTime" Value="%9" />
+      <Parameter Name="PlotId" Value="%10" />
+      <Parameter Name="ActivityDescriptionId"  DbType="Int32" Value="%11" />
+      <Parameter Name="ResourceMaintenanceCostTypeId"  DbType="Int32" Value="%12" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%13" Direction="Output" Size="4" DbType="Int32" />
+   </DbCommand>
+    <DbCommand Method="UPDATE" Caption="UpdateActivityCrop" CommandText="CROP_RESOURCE_LIVESTOCK_ActivityDetails" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="2" />
+      <Parameter Name="UserId" DbType="Int32" Value="%0" />
+      <Parameter Name="ProductId" DbType="Int32" Value="%1" />
+      <Parameter Name="categoryId" DbType="Int32" Value="%2" />
+      <Parameter Name="LastHarvestedDate" Value="%3" />
+      <Parameter Name="IsHarvestedBefore" Value="%4" />
+      <Parameter Name="IsSoldBefore" Value="%5" />
+      <Parameter Name="IsSoldBeforeNoReason"  Value="%6" />
+      <Parameter Name="SoldPrice"  Value="%7" />
+      <Parameter Name="ActivityDate" Value="%8" />
+      <Parameter Name="plantationdate" Value="%9" />
+      <Parameter Name="PlotId" DbType="Int32" Value="%10" />
+      <Parameter Name="ActivityDescriptionId" DbType="Int32" Value="%11" />
+      <Parameter Name="ActivityId" DbType="Int32" Value="%12" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%13" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+    <DbCommand Method="UPDATE" Caption="UpdateActivityLiveStock" CommandText="CROP_RESOURCE_LIVESTOCK_ActivityDetails" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="8" />
+      <Parameter Name="UserId" DbType="Int32" Value="%0" />
+      <Parameter Name="ProductId" DbType="Int32" Value="%1" />
+      <Parameter Name="categoryId" DbType="Int32" Value="%2" />
+      <Parameter Name="NumberOfLivestock"  Value="%3" />
+      <Parameter Name="LiveStockUsageId"  Value="%4" />
+      <Parameter Name="LIveStockUtilityId"  Value="%5" />
+      <Parameter Name="IsLivestockSalable"  Value="%6" />
+      <Parameter Name="LastDateOfLivestockSold" Value="%7" />
+      <Parameter Name="LivestocksellingLocationId"  Value="%8" />
+      <Parameter Name="ActivityDate" Value="%9" />
+      <Parameter Name="PlotId" Value="%10" />
+      <Parameter Name="ActivityDescriptionId" Value="%11" />
+      <Parameter Name="LivestocksellingLocationName" Value="%12" />
+      <Parameter Name="LiveStockName" Value="%13" />
+      <Parameter Name="LivestockUsageName" Value="%14" />
+      <Parameter Name="LivestockUtilityName" Value="%15" />
+      <Parameter Name="SoldLiveStockAmount" Value="%16" />
+      <Parameter Name="ActivityId" DbType="Int32" Value="%17" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%18" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+    <DbCommand Method="UPDATE" Caption="UpdateActivityResources" CommandText="CROP_RESOURCE_LIVESTOCK_ActivityDetails" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="1" />
+      <Parameter Name="UserId" DbType="Int32" Value="%0" />
+      <Parameter Name="ProductId" DbType="Int32" Value="%1" />
+      <Parameter Name="categoryId" DbType="Int32" Value="%2" />
+      <Parameter Name="NumberOfResource" DbType="Int32" Value="%3" />
+      <Parameter Name="ResourceCostTypeId" DbType="Int32" Value="%4" />
+      <Parameter Name="ResourceTypeId" DbType="Int32" Value="%5" />
+      <Parameter Name="ResourceTypeName" Value="%6" />
+      <Parameter Name="ResourceMaintenancePrice" Value="%7" />
+      <Parameter Name="ResourcePrice"  Value="%8" />
+      <Parameter Name="ActivityDate" DbType="DateTime" Value="%9" />
+      <Parameter Name="PlotId" Value="%10" />
+      <Parameter Name="ActivityDescriptionId"  DbType="Int32" Value="%11" />
+      <Parameter Name="ResourceMaintenanceCostTypeId"  DbType="Int32" Value="%12" />
+      <Parameter Name="ActivityId" DbType="Int32" Value="%13" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%14" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+    <DbCommand Method="UPDATE" Caption="DeleteActivity" CommandText="CROP_RESOURCE_LIVESTOCK_ActivityDetails" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="15" />
+      <Parameter Name="ActivityId" Value="%0" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%1" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+    <DbCommand Method="READ" Caption="GetProductListByDate" CommandText="CROP_RESOURCE_LIVESTOCK_ActivityDetails" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="19" />
+      <Parameter Name="UserId" DbType="Int32" Value="%0" />
+      <Parameter Name="ActivityStartDate" Value="%1" />
+      <Parameter Name="ActivityEndtDate" Value="%2" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%3" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+    <DbCommand Method="READ" Caption="GetActivityCountByDate" CommandText="CROP_RESOURCE_LIVESTOCK_ActivityDetails" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="13" />
+      <Parameter Name="UserId" DbType="Int32" Value="%0" />
+      <Parameter Name="ActivityDate" Value="%1" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%2" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+    <DbCommand Method="READ" Caption="GetActivityById" CommandText="CROP_RESOURCE_LIVESTOCK_ActivityDetails" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="20" />
+      <Parameter Name="ActivityId" DbType="Int32" Value="%0" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%3" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+  </Object>
+  <Object Key="CategoryMaster">
+    <DbCommand Method="READ" Caption="GetCategoryList" CommandText="CROP_RESOURCE_LIVESTOCK_ActivityDetails" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="10" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%0" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+  </Object>
+  <Object Key="ProductDetail">
+    <DbCommand Method="CREATE" Caption="CreateSubCategory" CommandText="CROP_RESOURCE_LIVESTOCK_ActivityDetails" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="21" />
+      <Parameter Name="ProductName" Value="%0" />
+      <Parameter Name="ProductImageLocation" Value="%1" />
+      <Parameter Name="CategoryId" DbType="Int32" Value="%2" />
+      <Parameter Name="UserId" DbType="Int32" Value="%3" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%4" Direction="Output" Size="4" DbType="Int32" />
+  </DbCommand>
+    <DbCommand Method="READ" Caption="GetSubCategoryList" CommandText="CROP_RESOURCE_LIVESTOCK_ActivityDetails" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="11" />
+      <Parameter Name="categoryId" DbType="Int32" Value="%0" />
+      <Parameter Name="UserId" DbType="Int32" Value="%1" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%2" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+  </Object>
+  <Object Key="ProductResources">
+    <DbCommand Method="READ" Caption="GetProductResourcesList" CommandText="CROP_RESOURCE_LIVESTOCK_ActivityDetails" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="14" />
+      <Parameter Name="AuthenticationSuccessmode" Value="%0" Direction="Output" Size="4" DbType="Int32" />
+    </DbCommand>
+  </Object>
+  <Object Key="ActivityDescriptions">
+    <DbCommand Method="READ" Caption="GetAllActivityDescriptions" CommandText="ActivityDetailsValue" CommandType="StoredProcedure">
+      <Parameter Name="Opmode" Value="14" />
+    </DbCommand>
+  </Object>
+</DataAccessCommands>
+
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+      
+      
+      
+    
+    
+      
+      
+      
+      
+      
+      
+      
+
+
+

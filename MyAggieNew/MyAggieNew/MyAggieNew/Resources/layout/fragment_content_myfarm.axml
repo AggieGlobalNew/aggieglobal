@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+	android:animateLayoutChanges="true"
+	android:orientation="vertical"
+	android:scrollbars="vertical">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:paddingTop="56dp"
+		android:paddingLeft="24dp"
+		android:paddingRight="24dp">
+		<ImageView android:src="@drawable/logo"
+			android:layout_width="wrap_content"
+			android:layout_height="72dp"
+			android:layout_marginBottom="24dp"
+			android:layout_gravity="center_horizontal" />
+
+		<TextView android:text=""
+			android:visibility="gone"
+			android:id="@+id/txt_FarmID"
+			android:layout_marginTop="20dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<TextView
+			android:text="Farm Name"
+			android:id="@+id/txt_FarmName"
+			android:layout_marginTop="20dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textStyle="bold|italic"
+			android:textSize="24sp" />
+
+		<TextView
+			android:text="100 N. Main Street, Anywhere in Fiji."
+			android:id="@+id/txt_FarmAddress"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textStyle="italic"
+			android:textSize="16sp" />
+
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:paddingTop="10dp"
+			android:paddingLeft="10dp"
+			android:paddingRight="5dp"
+			android:layout_marginTop="30dp"
+			android:layout_gravity="center_horizontal">
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_gravity="center">
+				<TextView
+					android:text="Size"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="30dp"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:layout_column="1" />
+				<TextView
+					android:text="15 acres"
+					android:id="@+id/txt_FarmSize"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="60dp"
+					android:textSize="16sp"
+					android:layout_column="2" />
+			</TableRow>
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:paddingTop="15dp"
+				android:layout_gravity="center">
+				<TextView
+					android:text="Established"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="30dp"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:layout_column="1" />
+				<TextView
+					android:text="January 2017"
+					android:id="@+id/txt_FarmEstablishedDate"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="60dp"
+					android:textSize="16sp"
+					android:layout_column="2" />
+			</TableRow>
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:paddingTop="15dp"
+				android:layout_gravity="center">
+				<TextView
+					android:text="Co-Op"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="30dp"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:layout_column="1" />
+				<TextView
+					android:text="None"
+					android:id="@+id/txt_CoOpName"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="60dp"
+					android:textSize="16sp"
+					android:layout_column="2" />
+			</TableRow>
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:visibility="gone"
+				android:layout_gravity="center">
+				<android.support.v7.widget.AppCompatButton
+					android:id="@+id/btn_addnewplot"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="74dp"
+					android:layout_marginBottom="24dp"
+					android:padding="10dp"
+					android:textAlignment="center"
+					android:background="@drawable/gradient"
+					android:text="Add New Plot"
+				android:layout_span="2"
+				android:layout_column="1"/>
+			</TableRow>
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:visibility="gone"
+				android:layout_gravity="center">
+				<android.support.v7.widget.AppCompatButton
+					android:id="@+id/btn_viewexistingplot"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:padding="10dp"
+					android:textAlignment="center"
+					android:background="@drawable/gradient"
+					android:text="View Existing Plot"
+				android:layout_span="2"
+				android:layout_column="1"/>
+			</TableRow>
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_marginTop="10dp"
+				android:layout_gravity="center">
+				<GridView android:id="@+id/grid_view_farm_dashitems_nw"
+					android:layout_width="match_parent"
+					android:layout_height="270dp"
+					android:columnWidth="110dp"
+					android:layout_marginTop="24dp"
+					android:gravity="center_horizontal"
+					android:numColumns="auto_fit"
+					android:layout_span="2"
+					android:layout_column="1"/>
+			</TableRow>
+		</TableLayout>
+	</LinearLayout>
+</ScrollView>

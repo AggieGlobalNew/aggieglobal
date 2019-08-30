@@ -1,0 +1,34 @@
+<resources><string name="hello">Hello World, Click Me!</string><string name="app_name">My Aggie</string><string name="app_name_code">myaggie</string><!--<string neme="app_supportemail">hello.aggieglobal.com</string>--><string name="app_teamname">Aggie Global Team</string><string name="openDrawer">Navigation</string><string name="closeDrawer">My Aggie</string><string name="DialogHeaderGeneric">Message</string><string name="DialogHeaderError">Error</string><string name="exitAppMessage">Are you sure you want to exit My Aggie?</string><string name="appLogoutMessage">Are you sure you want to logout?</string><string name="DialogButtonOk">OK</string><string name="DialogButtonYes">YES</string><string name="DialogButtonNo">NO</string><string name="cancelFromAddItemMessage">Are you sure you want to cancel?</string><string name="value_prompt0">Choose Activity</string><string name="value_promptx0">Choose Farm</string><string name="value_isorganic">Select</string><string name="value_soilph">Select Soil Ph</string><string name="value_soiltype">Select Soil Type</string><string name="value_livestockFor">Livestock For</string><string name="value_livestockSellType">Livestock Sell Type</string><string name="value_livestockSellWho">Livestock Sell Who</string><string name="value_resourceOwnType">Resource Type</string><string name="value_resourceCost">Resource Cost</string><string name="value_resourceMaintenaceCost">Resource Maintenace Cost</string><string name="value_SelectPlot">Select Plot</string><string name="value_activityComplete">Choose Activity Complete</string><string name="welcome_points1">
+    Welcome to My Aggie! Your personal farm organizer.
+    \n\n\n
+    Visit the My Farm feature to start adding details about the land in your farm!\n
+    \u25A0 Create plots to distinguish between different fields or sections of land
+    \n\u25A0	Record soil type, pH and more for each plot
+    \n\u25A0 Coming soon you can link crops, livestock and resources to the different plots
+    \n\n
+    Arriving later this month is the Activity Feature!
+    \n\n
+    With the Activity feature you can:\n
+    \u25A0 Record when you last harvested your crops
+    \n\u25A0 Track the treatments provided to your crops
+    \n\u25A0 Record the trims you gave your livestock
+    \n\u25A0 Connect your activities to the different Plots created in My Farm
+    \n\u25A0 And more!
+    \n\n
+    Future features include:\n
+    \u25A0 Ask an Aggie -  get professional opinions and an advice from Agricultural Experts
+    \n\u25A0 Marketplace - buy and sell your products through our service
+    \n\u25A0 Reporting - automatic insight into finances, growth and more
+    \n\u25A0 AI Powered Farm Blue Printing, Produce Grading and Pest Identification
+    \n\n
+    We hope you love the app and if you have any questions, or comments please send us a message through the contact us form in the left menu!
+  </string><string name="welcome_points0">
+    Welcome to My Aggie! Your personal farm organizer.
+    <br /><br /><br />
+    Visit the <strong>My Farm</strong> feature to start adding details about the land in your farm!<br /><ul><li>Create plots to distinguish between different fields or sections of land</li><li>Record soil type, pH and more for each plot</li><li><i>Coming soon</i> you can link crops, livestock and resources to the different plots</li></ul><br /><br />
+    Arriving later this month is the Activity Feature!
+    <br /><br />
+    With the <strong>Activity feature</strong> you can:<br /><ul><li>Record when you last harvested your crops</li><li>Track the treatments provided to your crops</li><li>Record the trims you gave your livestock</li><li>Connect your activities to the different Plots created in My Farm</li><li>And more!</li></ul><br /><br />
+    Future features include:<br /><ul><li><strong>Ask an Aggie</strong> -  get professional opinions and an advice from Agricultural Experts</li><li><strong>Marketplace</strong> - buy and sell your products through our service</li><li><strong>Reporting</strong> - automatic insight into finances, growth and more</li><li>AI Powered Farm Blue Printing, Produce Grading and Pest Identification</li></ul><br /><br />
+    We hope you love the app and if you have any questions, or comments please send us a message through the contact us form in the left menu!
+  </string></resources>

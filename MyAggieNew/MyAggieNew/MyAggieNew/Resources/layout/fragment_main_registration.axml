@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+	android:animateLayoutChanges="true"
+	android:orientation="vertical"
+	android:scrollbars="vertical">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:paddingTop="56dp"
+		android:paddingLeft="24dp"
+		android:paddingRight="24dp">
+		<ImageView android:src="@drawable/logo"
+				android:layout_width="wrap_content"
+				android:layout_height="72dp"
+				android:layout_marginBottom="24dp"
+				android:layout_gravity="center_horizontal" />
+
+		<FrameLayout
+			android:layout_width="220dp"
+			android:layout_height="220dp"
+			android:layout_gravity="center">
+			<refractored.controls.CircleImageView
+				xmlns:app="http://schemas.android.com/apk/res-auto"
+				android:id="@+id/profile_image"
+				android:layout_width="190dp"
+				android:layout_height="190dp"
+				android:src="@drawable/profileavatar"
+				app:civ_border_width="0dp"
+				app:civ_border_color="#CCCCCC"
+				android:layout_gravity="bottom|center_horizontal" />
+
+			<refractored.controls.CircleImageView
+				xmlns:app="http://schemas.android.com/apk/res-auto"
+				android:id="@+id/iv_camera"
+				android:layout_width="70dp"
+				android:layout_height="70dp"
+				android:src="@drawable/camera"
+				app:civ_border_width="2dp"
+				app:civ_border_color="#FFFFFF"
+				android:layout_gravity="top|right" />
+		</FrameLayout>
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp">
+			<EditText android:id="@+id/input_fname"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="text"
+				android:textColorHint="@color/colorWhite"
+				android:hint="First Name" />
+		</android.support.design.widget.TextInputLayout>
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp">
+			<EditText android:id="@+id/input_lname"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="text"
+				android:textColorHint="@color/colorWhite"
+				android:hint="Last Name" />
+		</android.support.design.widget.TextInputLayout>
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp">
+			<EditText android:id="@+id/input_useremail"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="text"
+				android:textColorHint="@color/colorWhite"
+				android:hint="Email" />
+		</android.support.design.widget.TextInputLayout>
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp">
+			<EditText android:id="@+id/input_userpassword"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="textPassword"
+				android:textColorHint="@color/colorWhite"
+				android:hint="Password" />
+		</android.support.design.widget.TextInputLayout>
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp">
+			<EditText android:id="@+id/input_userconfpassword"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="textPassword"
+				android:textColorHint="@color/colorWhite"
+				android:hint="Confirm Password" />
+		</android.support.design.widget.TextInputLayout>
+		<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:tools="http://schemas.android.com/tools"
+			android:id="@+id/GridLayoutx2x"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:columnCount="2"
+			android:rowCount="1"
+			android:layout_gravity="right"
+			android:orientation="horizontal">
+			<android.support.v7.widget.AppCompatButton
+				android:id="@+id/btn_cancelrgstr"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="24dp"
+				android:layout_marginBottom="24dp"
+				android:padding="12dp"
+				android:minWidth="150dp"
+				android:textAlignment="center"
+				android:background="@drawable/gradient2"
+				android:text="Cancel"/>
+			<android.support.v7.widget.AppCompatButton
+				android:id="@+id/btn_rgster"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="24dp"
+				android:layout_marginBottom="24dp"
+				android:padding="12dp"
+				android:layout_marginLeft="15dp"
+				android:minWidth="150dp"
+				android:textAlignment="center"
+				android:background="@drawable/gradient"
+				android:text="Register"/>
+		</GridLayout>
+	</LinearLayout>
+</ScrollView>

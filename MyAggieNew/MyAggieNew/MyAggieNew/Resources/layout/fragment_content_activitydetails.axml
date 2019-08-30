@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+	android:animateLayoutChanges="true"
+	android:orientation="vertical"
+	android:scrollbars="vertical">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:paddingTop="56dp"
+		android:paddingLeft="24dp"
+		android:paddingRight="24dp">
+		<ImageView android:src="@drawable/logo"
+				android:layout_width="wrap_content"
+				android:layout_height="72dp"
+				android:layout_marginBottom="24dp"
+				android:layout_gravity="center_horizontal" />
+
+		<TextView
+			android:text="ActivityDate"
+			android:layout_marginTop="20dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_ActivityDate"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="PlotName"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_PlotName"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="ActivityDescription"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_ActivityDescription"
+			android:layout_column="1" />		
+
+		<TextView
+			android:text="ProductTypeName"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_ProductTypeName"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="ProductName"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_product_name"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="LastHarvestedDate"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_LastHarvestedDate"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="HarvestedBefore"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_HarvestedBefore"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="SoldBefore"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_SoldBefore"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="SoldBeforeNoReason"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_SoldBeforeNoReason"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="SoldPrice"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_SoldPrice"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="PlantationDate"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_PlantationDate"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="TotalNumberOfResource"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_TotalNumberOfResource"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="ResourceCostType"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_ResourceCostType"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="ResourcePrice"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_ResourcePrice"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="NumberOfProduct"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_NumberOfProduct"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="LiveStockUsageName"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_LiveStockUsageName"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="LiveStockUtilityName"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_LiveStockUtilityName"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="IsLivestockSalable"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_IsLivestockSalable"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="LastDateOfLivestockSold"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_LastDateOfLivestockSold"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="SoldLiveStockAmount"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_SoldLiveStockAmount"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="LivestocksellingLocationName"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_LivestocksellingLocationName"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="LiveStockName"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_LiveStockName"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="ResourceTypeName"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_ResourceTypeName"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="ResourceCostTypeName"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_ResourceCostTypeName"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="SoldLiveStockProductName"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_SoldLiveStockProductName"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="ResourceMaintenanceCostTypeName"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_ResourceMaintenanceCostTypeName"
+			android:layout_column="1" />
+
+		<TextView
+			android:text="ResourceMaintenancePrice"
+			android:layout_marginTop="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:id="@+id/txtdtl_ResourceMaintenancePrice"
+			android:layout_column="1" />
+		
+		<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:tools="http://schemas.android.com/tools"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:columnCount="3"
+			android:rowCount="1"
+			android:layout_gravity="right"
+			android:orientation="horizontal">
+			<android.support.v7.widget.AppCompatButton
+				android:id="@+id/btn_activity_back"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="24dp"
+				android:layout_marginBottom="24dp"
+				android:padding="12dp"
+				android:minWidth="150dp"
+				android:textAlignment="center"
+				android:background="@drawable/gradient2"
+				android:text="Cancel" />
+			<android.support.v7.widget.AppCompatButton
+				android:id="@+id/btn_activity_updaterecord"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="24dp"
+				android:layout_marginBottom="24dp"
+				android:padding="12dp"
+				android:minWidth="150dp"
+				android:layout_marginLeft="15dp"
+				android:textAlignment="center"
+				android:background="@drawable/gradient"
+				android:text="Update" />
+			<android.support.v7.widget.AppCompatButton
+				android:id="@+id/btn_activity_delete"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="24dp"
+				android:layout_marginLeft="15dp"
+				android:layout_marginBottom="24dp"
+				android:padding="12dp"
+				android:minWidth="150dp"
+				android:textAlignment="center"
+				android:background="@drawable/gradientred"
+				android:text="Delete" />	
+		</GridLayout>
+	</LinearLayout>
+</ScrollView>

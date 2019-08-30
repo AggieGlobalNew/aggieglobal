@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+	android:animateLayoutChanges="true"
+	android:orientation="vertical"
+	android:scrollbars="vertical">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:paddingTop="56dp"
+		android:paddingLeft="24dp"
+		android:paddingRight="24dp">
+		<ImageView android:src="@drawable/logo"
+				android:layout_width="wrap_content"
+				android:layout_height="72dp"
+				android:layout_marginBottom="24dp"
+				android:layout_gravity="center_horizontal" />
+
+		<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:tools="http://schemas.android.com/tools"
+				android:id="@+id/grid_view_title_level1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:columnCount="6"
+				android:rowCount="1"
+				android:orientation="horizontal">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:layout_marginBottom="5dp"
+					android:text="Selected Item:"
+					android:textStyle="bold"
+					android:textSize="14sp" />
+				<ImageView android:id="@+id/imgItem_level1"
+					android:src="@drawable/ic_crop"
+					android:layout_width="wrap_content"
+					android:layout_marginTop="2dp"
+					android:layout_marginBottom="5dp"
+					android:layout_height="24dp" />
+				<TextView android:id="@+id/txt_itemtitle_level1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:layout_marginBottom="5dp"
+					android:text="Crop"
+					android:textSize="12sp" />
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:layout_marginBottom="5dp"
+					android:layout_marginLeft="10dp"
+					android:text=">>"
+					android:textStyle="bold"
+					android:textSize="12sp" />
+				<ImageView android:id="@+id/imgItem_level2"
+					android:src="@drawable/ic_corn"
+					android:layout_width="wrap_content"
+					android:layout_marginTop="2dp"
+					android:layout_marginBottom="5dp"
+					android:layout_height="24dp" />
+				<TextView android:id="@+id/txt_itemtitle_level2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:layout_marginBottom="5dp"
+					android:text="Corn"
+					android:textSize="12sp" />
+		</GridLayout>
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="1dp"
+			android:text="Selected Activity"
+			android:textSize="16sp" />
+		<android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="5dp">
+			<Spinner android:id="@+id/spinner0"  
+			    android:layout_width="fill_parent"  
+			    android:layout_height="wrap_content"  
+			    android:prompt="@string/value_prompt0" />
+        </android.support.design.widget.TextInputLayout>
+
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp">
+			<EditText android:id="@+id/input_rate"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="number"
+				android:textColorHint="@color/colorWhite"
+				android:hint="Rate" />
+		</android.support.design.widget.TextInputLayout>
+
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp">
+			<EditText android:id="@+id/input_method"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="text"
+				android:textColorHint="@color/colorWhite"
+				android:hint="Method" />
+		</android.support.design.widget.TextInputLayout>
+
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp">
+			<EditText android:id="@+id/input_location"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="text"
+				android:textColorHint="@color/colorWhite"
+				android:hint="Location" />
+		</android.support.design.widget.TextInputLayout>
+
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp">
+			<EditText android:id="@+id/input_notes"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="textMultiLine"
+				android:lines="8"
+				android:minLines="4"
+				android:gravity="top|left"
+				android:maxLines="10"
+				android:scrollbars="vertical"
+				android:textColorHint="@color/colorWhite"
+				android:hint="Notes" />
+		</android.support.design.widget.TextInputLayout>
+
+		<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:tools="http://schemas.android.com/tools"
+			android:id="@+id/GridLayoutx3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:columnCount="2"
+			android:rowCount="1"
+			android:layout_gravity="right"
+			android:orientation="horizontal">
+			<android.support.v7.widget.AppCompatButton
+				android:id="@+id/btn_cancel"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="24dp"
+				android:layout_marginBottom="24dp"
+				android:padding="12dp"
+				android:minWidth="150dp"
+				android:textAlignment="center"
+				android:background="@drawable/gradient2"
+				android:text="Cancel"/>
+			<android.support.v7.widget.AppCompatButton
+				android:id="@+id/btn_save"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="24dp"
+				android:layout_marginLeft="15dp"
+				android:layout_marginBottom="24dp"
+				android:padding="12dp"
+				android:minWidth="150dp"
+				android:textAlignment="center"
+				android:background="@drawable/gradient"
+				android:text="Save"/>	
+		</GridLayout>
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--<color name="colorPrimary">#405847</color>
+  <color name="colorPrimaryDark">#102E19</color>-->
+  <color name="colorPrimary">#334442</color>
+  <color name="colorPrimaryDark">#132F3D</color>
+  <color name="colorAccent">#3498DB</color>
+  <!--<color name="colorListViewBackground">#9CC212</color>
+  <color name="colorListViewBackgroundDark">#7A941A</color>-->
+  <color name="colorListViewBackground">#C0DF67</color>
+  <color name="colorListViewBackgroundDark">#24A85C</color>
+  <color name="colorListViewBackground2">#CCCCCC</color>
+  <color name="colorListViewBackgroundDark2">#999999</color>
+  <color name="colorListViewBackgroundRed">#FFB533</color>
+  <color name="colorListViewBackgroundDarkRed">#A82424</color>
+  <color name="colorLite">#FFF443</color>
+  <color name="colorWhite">#FFFFFF</color>
+  <color name="colorArrowStyle">#F5F5F5</color>
+</resources>

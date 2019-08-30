@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+	android:animateLayoutChanges="true"
+	android:orientation="vertical"
+	android:scrollbars="vertical">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:paddingTop="56dp"
+		android:paddingLeft="24dp"
+		android:paddingRight="24dp">
+		<ImageView android:src="@drawable/logo"
+			android:layout_width="wrap_content"
+			android:layout_height="72dp"
+			android:layout_marginBottom="24dp"
+			android:layout_gravity="center_horizontal" />
+
+		<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:tools="http://schemas.android.com/tools"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:columnCount="3"
+			android:rowCount="1"
+			android:orientation="horizontal">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"
+				android:text="Selected Item:"
+				android:textStyle="bold"
+				android:textSize="14sp" />
+			<ImageView android:id="@+id/img_lvl_1"
+				android:src="@drawable/ic_crop"
+				android:layout_width="wrap_content"
+				android:layout_marginTop="2dp"
+				android:layout_marginBottom="5dp"
+				android:layout_height="24dp" />
+			<TextView android:id="@+id/txt_lvl_1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"
+				android:text="Crop"
+				android:textSize="12sp" />
+		</GridLayout>
+
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp">
+			<EditText android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColorHint="@color/colorWhite"
+				android:hint="Product Name"
+				android:id="@+id/txt_ProductName" />
+		</android.support.design.widget.TextInputLayout>
+
+		<ImageView android:src="@drawable/default_product"
+			android:layout_width="wrap_content"
+			android:id="@+id/img_product_view"
+			android:layout_height="100dp"
+			android:layout_gravity="center_horizontal" />
+
+		<Button android:id="@+id/btn_show_popup"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="24dp"
+			android:layout_marginLeft="15dp"
+			android:layout_marginBottom="24dp"
+			android:padding="12dp"
+			android:minWidth="150dp"
+			android:textAlignment="center"
+			android:drawableLeft="@drawable/ic_capture"
+			android:text="Upload Product Icon"/>
+
+		<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:tools="http://schemas.android.com/tools"
+			android:id="@+id/GridLayoutx_prd"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:columnCount="2"
+			android:rowCount="1"
+			android:layout_gravity="right"
+			android:orientation="horizontal">
+			<android.support.v7.widget.AppCompatButton
+				android:id="@+id/btn_prd_cancel"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="24dp"
+				android:layout_marginBottom="24dp"
+				android:padding="12dp"
+				android:minWidth="150dp"
+				android:textAlignment="center"
+				android:background="@drawable/gradient2"
+				android:text="Cancel"/>
+			<android.support.v7.widget.AppCompatButton
+				android:id="@+id/btn_prd_save"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="24dp"
+				android:layout_marginLeft="15dp"
+				android:layout_marginBottom="24dp"
+				android:padding="12dp"
+				android:minWidth="150dp"
+				android:textAlignment="center"
+				android:background="@drawable/gradient"
+				android:text="Save"/>	
+		</GridLayout>
+	</LinearLayout>
+</ScrollView>
